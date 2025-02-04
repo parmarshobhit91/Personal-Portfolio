@@ -4,7 +4,7 @@ import logoImage from '../assets/logo.png'
 
 function Navbar() {
     return (
-        <body>
+        <body className='font-display'>
             <nav className='bg-white shadow-md'>
                 <div className='w-full h-[80px] m-auto px-[85.3px] py-[5px]'>
                     <div className='flex justify-between h-[70px] items-center px-[]'>
@@ -21,7 +21,7 @@ function Navbar() {
                         </div>
                         {/* contact me button*/}
                         <div>
-                            <Link to='/contact' className='px-6 py-2 text-lg font-medium text-white bg-blue-500 hover:bg-blue-600 rounded-full'>Contact Me</Link>
+                            <Link to='/contact' className='px-6 py-2 text-lg font-medium text-purple-900 bg-white border border-purple-900 rounded-xl'>Contact Me</Link>
                         </div>
                     </div>
                 </div>
