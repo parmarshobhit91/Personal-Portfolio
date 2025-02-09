@@ -12,3 +12,29 @@
   --ease-snappy: cubic-bezier(0.2, 0, 0, 1);
   /* ... */
 }
+@theme {
+      /* --color-*: initial; */
+      --color-primary: #6D28D9; 
+      --color-secondary: #F97316; 
+      --color-textDark: #374151; 
+      --color-navbar: #0F172A;
+      --color-footer: #1E293B; 
+      --color-bgPage: #FAF5FF; 
+      --color-cardBg: #FFFFFF; 
+      --color-button: #2563EB; 
+      --color-buttonHover: #D1D5DB; 
+      --color-secondaryButton: #3B82F6; 
+}
+
+/* 
+//Primary heading 
+// Secondary heading
+// Paragraph text
+ // Navbar background ..
+// Footer background ..
+// Page background  ..
+// Card background  ..
+// Primary button
+// Button hover
+// Secondary button
+*/

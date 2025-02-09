@@ -50,6 +50,7 @@ import Experience from './pages/experience/Experience'
 import Projects from './pages/projects/Projects'
 import Navbar from './components/Navbar/Navbar'
 import Skills from './pages/skills/Skills'
+import Footer from './components/Footer/Footer'
 
 
 function App() {
@@ -60,11 +61,11 @@ function App() {
       <Element name='home'>
         <Home />
       </Element>
-      <Element name='about'>
-        <AboutMe />
-      </Element>
       <Element name='skills'>
         <Skills />
+      </Element>
+      <Element name='about'>
+        <AboutMe />
       </Element>
       <Element name='experience'>
         <Experience />
@@ -76,6 +77,8 @@ function App() {
         <Contact />
       </Element>
 
+
+      <Footer />
     </div>
   )
 }
