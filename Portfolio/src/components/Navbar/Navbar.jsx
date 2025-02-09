@@ -1,6 +1,6 @@
 import React from 'react'
 import { Link } from 'react-router-dom'
-import logoImage from '../assets/logo.png'
+import logoImage from '../../assets/logo.png'
 
 function Navbar() {
     return (
@@ -16,6 +16,7 @@ function Navbar() {
                         <div className='hidden md:flex space-x-8'>
                             <Link to='/' className='text-lg font-medium text-gray-600 hover:text-purple-900'>Home</Link>
                             <Link to='/about' className='text-lg font-medium text-gray-600 hover:text-purple-900'>About</Link>
+                            <Link to='/skills' className='text-lg font-medium text-gray-600 hover:text-purple-900'>Skills</Link>
                             <Link to='/experience' className='text-lg font-medium text-gray-600 hover:text-purple-900'>Experience</Link>
                             <Link to='/projects' className='text-lg font-medium text-gray-600 hover:text-purple-900'>Projects</Link>
                         </div>

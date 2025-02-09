@@ -6,10 +6,13 @@ import AboutMe from './pages/about/AboutMe'
 import Contact from './pages/contact/Contact'
 import Experience from './pages/experience/Experience'
 import Projects from './pages/projects/Projects'
-import Navbar from './components/Navbar'
+import Navbar from './components/Navbar/Navbar'
+import Skills from './pages/skills/Skills'
 
 
 function App() {
+
+
 
   return (
     <div id='app'>
@@ -23,9 +26,11 @@ function App() {
             <Route path='/contact' element={<Contact />} />
             <Route path='/experience' element={<Experience />} />
             <Route path='/projects' element={<Projects />} />
+            <Route path='/skills' element={<Skills />} />
           </Routes>
         </Router>
       </div>
+  
     </div>
   )
 }
