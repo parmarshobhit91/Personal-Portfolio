@@ -54,7 +54,7 @@ import Skills from './pages/skills/Skills'
 
 function App() {
   return (
-    <div id='app'>
+    <div id='app' className='font-display bg-gray-200'>
       <Navbar />
 
       <Element name='home'>
