@@ -7,6 +7,7 @@ import "swiper/css/pagination";
 import image1 from "../../assets/logo.png";
 
 const SlidingCards = () => {
+
   const cards = [
     { id: 1, title: "Card 1", description: "decx of cards", img: image1 },
     { id: 2, title: "Card 2", description: "decx of cards", img: "https://source.unsplash.com/300x200/?city" },
@@ -15,16 +16,18 @@ const SlidingCards = () => {
   ];
 
   return (
-    <div className='p-8 flex flex-col items-start bg-bgPage'>
-      <div className='p-8'>
-        <h1 className='text-md font-bold text-left mt-8'>My Skills</h1>
-        <h1 className='text-4xl font-bold text-left mt-8'>My Expertise</h1>
-        <div className="max-w-4xl mx-auto p-6 bg-cardBg">
+    <div className="p-8 flex flex-col items-start font-display">
+      <div className="p-8">
+        <h1 className="text-md font-display font-bold text-left mt-8">My Skills</h1>
+        <h1 className="text-4xl font-display font-bold text-left mt-8">My Expertise</h1> 
+
+
+        <div className="w-screen mx-auto p-6 mt-8 rounded-lg">
           <Swiper
             modules={[Navigation, Pagination, Autoplay]}
             spaceBetween={20}
             slidesPerView={1}
-            autoplay={{ delay: 10000 }}
+            autoplay={{ delay: 3000 }}
             navigation
             pagination={{ clickable: true }}
             breakpoints={{
@@ -34,22 +37,19 @@ const SlidingCards = () => {
             }}
           >
             {cards.map((card) => (
-              <SwiperSlide key={card.id} className="p-4 bg-white shadow-lg rounded-lg">
-                <img src={card.img} alt={card.title} className="w-full h-40 object-cover rounded-lg" />
-                <h2 className="text-lg font-semibold mt-2">{card.title}</h2>
-                <p className="text-sm text-gray-500">{card.description}</p>
+              <SwiperSlide key={card.id} className="flex justify-center">
+                <div className="flex flex-col justify-center items-center h-[370px] w-[405px] bg-[rgba(255,255,255,0.9)] shadow-md rounded-xl p-6">
+                  <img src={card.img} alt={card.title} className="w-[80px] h-[80px] object-cover rounded-xl" />
+                  <h2 className="text-2xl font-semibold text-gray-800 mt-4 text-center">{card.title}</h2>
+                  <p className="text-lg font-medium text-gray-600 mt-1 text-center">{card.description}</p>
+                </div>
               </SwiperSlide>
             ))}
           </Swiper>
         </div>
       </div>
     </div>
-
-      );
+  );
 };
 
-      export default SlidingCards;
-
-
-
-
+export default SlidingCards;

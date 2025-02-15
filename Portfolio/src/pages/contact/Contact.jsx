@@ -35,18 +35,18 @@ const Contact = () => {
   }
 
   return (
-    <div className='flex flex-col items-center justify-center space-y-4 pb-8 bg-bgPage'>
+    <div className='flex flex-col items-center justify-center space-y-4 pb-8 '>
       <div className='flex flex-col items-center justify-center space-y-4 w-[1024px]'>
         <h4 className='text-xl'>Get in Touch</h4>
         <h1 className='text-4xl'>Contact Me</h1>
         <h4 className='text-xl'>Please input your details. I will contact you shortly...</h4>
 
-      </div><div className="max-w-lg mx-auto bg-white p-6 rounded-lg shadow-md">
+      </div><div className="max-w-lg mx-auto border border-black p-6 rounded-lg shadow-md">
 
         <form onSubmit={handleSubmit} className="space-y-4">
           <input type="text" name="name" placeholder="Your Name" required value={formData.name} onChange={handleChange} className="w-full p-2 border rounded" />
           <input type="email" name="email" placeholder="Your Email" required value={formData.email} onChange={handleChange} className="w-full p-2 border rounded" />
-          <input type="number" name="mobileNumber" placeholder="Your Contact Number" required value={formData.mobileNumber} onChange={handleChange} className="w-full p-2 border rounded" />
+          <input type="tel" name="mobileNumber" placeholder="Your Contact Number" required value={formData.mobileNumber} onChange={handleChange} className="w-full p-2 border rounded" />
           <textarea name="message" placeholder="Your Message" required value={formData.message} onChange={handleChange} className="w-full p-2 border rounded"></textarea>
           <button type="submit" className="bg-blue-500 text-white p-2 rounded w-full">Send</button>
         </form>

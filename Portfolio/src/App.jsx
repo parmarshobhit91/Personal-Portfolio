@@ -52,10 +52,9 @@ import Navbar from './components/Navbar/Navbar'
 import Skills from './pages/skills/Skills'
 import Footer from './components/Footer/Footer'
 
-
 function App() {
   return (
-    <div id='app' className='font-display bg-gray-200'>
+      <div id='app' className='font-display'>
       <Navbar />
 
       <Element name='home'>

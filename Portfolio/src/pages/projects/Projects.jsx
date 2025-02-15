@@ -29,7 +29,7 @@ const cardData = [
 
 function Projects() {
     return (
-        <div className='p-8 flex flex-col items-start bg-bgPage'>
+        <div className='p-8 flex flex-col items-start '>
             <div className='p-8'>
                 <h4 className='text-xl font-bold text-left mt-8'>Projects</h4>
                 <h1 className='text-4xl font-bold text-left mt-8'>Projects done by me</h1>
