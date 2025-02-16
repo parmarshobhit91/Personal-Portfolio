@@ -59,7 +59,7 @@ const Navbar = () => {
                         </div>
                         {/* contact me button*/}
                         <div>
-                            <Link to='contact' smooth={true} duration={500} className='px-6 py-2 text-lg font-medium text-[#FFFFFF]  bg-[#E6399B] border border-black hover:bg-[#4D9DE0] rounded-xl'>Contact Me</Link>
+                            <Link to='contact' smooth={true} duration={500} className='px-6 py-2 text-lg font-medium text-[#FFFFFF]  bg-[#4D9DE0] border border-black hover:bg-black rounded-xl'>Contact Me</Link>
                         </div>
                     </div>
                 </div>
