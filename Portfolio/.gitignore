@@ -25,4 +25,4 @@ dist-ssr
 
 
 # Password files
-*.Backend/.env
+**/.env
